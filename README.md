@@ -1,6 +1,9 @@
 # Sample iOS App using MVVM Design Pattern and Test Driven Development
 
-This is a tutorial/demo app that has a sole purpose of promoting best coding practice using MVVM design pattern in Swift. An iterative development approach using Test Driven Development (TDD) has been used to develop this app, which ensures that 100% of test cases are written for the custom classes when an app is developed. Moreover, maximum employability of dependency injection has been ensured keeping clean architecture in mind.
+This is a tutorial/demo app that has a sole purpose of promoting best coding practice using MVVM design pattern in Swift. 
+
+### Development Approach
+An iterative development process using Test Driven Development (TDD) has been used to develop this app, which ensures that maximum test cases are written for different components - view models, services, etc. - during the app development phase. Moreover, using Dependency Injection made this code loosely coupled, thereby, enhancing the testability of the app.
 
 - Please contribute if there is a room for further improvement.
 
