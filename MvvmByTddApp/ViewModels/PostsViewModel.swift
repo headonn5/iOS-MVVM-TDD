@@ -25,11 +25,12 @@ class PostsViewModel {
   }
   
   func callApi() {
-    
+    // Make api call
     webService.fetchList(resource: APIEndpoint.getPostsEndpoint()) { (result: Result<[PostModel], AppError>) in
       switch result {
       case .success(let data):
         self.responseList.value = data
+        self.responseError.value = nil
       case .failure(let error):
         self.responseError.value = error
       }

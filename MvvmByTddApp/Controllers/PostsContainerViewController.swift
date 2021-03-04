@@ -28,6 +28,7 @@ class PostsContainerViewController: UIViewController, AlertProtocol {
     
     postsVM.responseError.bind { [unowned self] (appError) in
       guard let error = appError else {return}
+      self.updateVisibilityOfViews()
       self.showErrorFailure(error: error)
     }
     
@@ -41,6 +42,7 @@ class PostsContainerViewController: UIViewController, AlertProtocol {
   }
   
   @IBAction func getPostsClicked(_ sender: UIButton) {
+    SpinnerView.showSpinner()
     postsVM.callApi()
   }
   
@@ -49,10 +51,12 @@ class PostsContainerViewController: UIViewController, AlertProtocol {
   }
   
   private func updateVisibilityOfViews() {
+    
     // Should Posts list view be shown
-    let shouldShowPosts = !self.postsVM.responseList.value.isEmpty
+    let shouldShowPosts = !self.postsVM.responseList.value.isEmpty && (postsVM.responseError.value == nil)
     self.containerView.isHidden = !shouldShowPosts
     self.getPostsButton.isHidden = shouldShowPosts
+    SpinnerView.hideSpinner()
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -43,6 +43,7 @@
 		29151D2225DC4F3000C8F751 /* SuccessfulMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 29151D2125DC4F3000C8F751 /* SuccessfulMockResponse.json */; };
 		29151D2A25DC4F6D00C8F751 /* InvalidMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 29151D2925DC4F6D00C8F751 /* InvalidMockResponse.json */; };
 		29151D3225DC4FA100C8F751 /* ErrorMockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 29151D3125DC4FA100C8F751 /* ErrorMockResponse.json */; };
+		293339E525F0D490004765B0 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293339E425F0D490004765B0 /* SpinnerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		29151D2125DC4F3000C8F751 /* SuccessfulMockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SuccessfulMockResponse.json; sourceTree = "<group>"; };
 		29151D2925DC4F6D00C8F751 /* InvalidMockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InvalidMockResponse.json; sourceTree = "<group>"; };
 		29151D3125DC4FA100C8F751 /* ErrorMockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ErrorMockResponse.json; sourceTree = "<group>"; };
+		293339E425F0D490004765B0 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 				29151CA325DC470200C8F751 /* PostsContainerViewController.swift */,
 				29151CAF25DC476A00C8F751 /* PostsListTableViewController.swift */,
 				29151CB425DC478800C8F751 /* PostsDetailViewController.swift */,
+				293339E425F0D490004765B0 /* SpinnerView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				29151C8A25DC0CA700C8F751 /* PostDetailViewModel.swift in Sources */,
 				29151C7F25DC0C5000C8F751 /* PostsViewModel.swift in Sources */,
 				29151C6025DC0BBB00C8F751 /* PostsFlowCoordinator.swift in Sources */,
+				293339E525F0D490004765B0 /* SpinnerView.swift in Sources */,
 				29151C2725DC088C00C8F751 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
