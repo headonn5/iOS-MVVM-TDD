@@ -10,7 +10,7 @@ import XCTest
 
 class PostsViewModelTests: XCTestCase {
   
-  func testPostsViewModel_WhenDataReturened_PostsModelUpdated() {
+  func testPostsViewModel_WhenDataReturned_PostsModelUpdated() {
     
     // Arrange
     let expectation = XCTestExpectation(description: "The response model is expected to be updated.")
